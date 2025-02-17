@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockstar Games Developer Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logos {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 150px;
+            margin-right: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f5c518;
+        }
+        .hero {
+            background: black;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards;
+        }
+        .hero h1 {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 5px;
+            opacity: 0;
+            animation: fadeInText 2s ease-out forwards 0.5s;
+        }
+        .hero img {
+            height: 340px;
+            opacity: 0;
+            animation: fadeInLogo 2s ease-out forwards 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInText {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInLogo {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #111;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <img src="https://cdn.cookielaw.org/logos/3efb95b4-aed7-4aa8-85d8-488eb074fa8c/8d9316c1-2ab6-4a2f-9582-ad18d8bfede6/4439df62-7489-4d15-b892-f1b5b6dd029d/Rockstar_Games_Logo.png" alt="Rockstar Games Logo" class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Rockstar_North_Logo.svg/1200px-Rockstar_North_Logo.svg.png" alt="Rockstar North Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#tools">Dev Tools</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <h1>Grand Theft Auto VI™</h1>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/46c9a4ac-fdde-47b0-b37c-d498dd776bb5/dgj5wme-327561a1-f8f9-41bd-b591-57ba244348c2.png/v1/fit/w_764,h_612/grand_theft_auto_vi_logo_png__by_emannyc01_dgj5wme-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjEyIiwicGF0aCI6IlwvZlwvNDZjOWE0YWMtZmRkZS00N2IwLWIzN2MtZDQ5OGRkNzc2YmI1XC9kZ2o1d21lLTMyNzU2MWExLWY4ZjktNDFiZC1iNTkxLTU3YmEyNDQzNDhjMi5wbmciLCJ3aWR0aCI6Ijw9NzY0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.p_5T5v4Xba8V6vWbng1BGoIAEd00uNh46lQyzCAD_uI">
+    </div>
+    
+    
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Rockstar Games. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockstar Games Developer Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logos {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 150px;
+            margin-right: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f5c518;
+        }
+        .hero {
+            background: url('https://www.gtavice.net/content/images/rockstar-games-official-street-background-artwork.png') no-repeat center center/cover;
+            height: 1024px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInBackground 2s ease-out forwards;
+        }
+        
+        @keyframes fadeInBackground {
+            from {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+                .hero h1 {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .option-card {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .option-card:hover {
+            transform: scale(1.05);
+        }
+        .option-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .option-card a {
+            display: block;
+            color: #f5c518;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .content-section {
+            padding: 50px;
+            background-color: #111;
+            margin-top: 20px;
+        }
+        .content-section h2 {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    
+        .option-card {
+            background-color: #000;
+            border-radius: 10px;
+            width: 300px;
+            text-align: left;
+            overflow: hidden;
+            border: 1px solid #444;
+            transition: transform 0.3s;
+        }
+    
+        .option-card:hover {
+            transform: scale(1.05);
+        }
+    
+        .option-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    
+        .card-content {
+            padding: 10px;
+            background: black;
+        }
+    
+        .game-title {
+            font-size: 14px;
+            color: white;
+        }
+    
+        .date-text {
+            color: grey;
+        }
+    
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <img src="https://cdn.cookielaw.org/logos/3efb95b4-aed7-4aa8-85d8-488eb074fa8c/8d9316c1-2ab6-4a2f-9582-ad18d8bfede6/4439df62-7489-4d15-b892-f1b5b6dd029d/Rockstar_Games_Logo.png" alt="Rockstar Games Logo" class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Rockstar_North_Logo.svg/1200px-Rockstar_North_Logo.svg.png" alt="Rockstar North Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#tools">Developer Tools</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <h1 style="top: ;">Welcome to the Rockstar Developer Hub</h1>
+    </div>
+    
+    <section id="options">
+        <h2>Developer Tools & Resources</h2>
+        <div class="options">
+            <div class="option-card">
+                <img src="https://assets.rockstargames.com/rockstargames-newsite/img/global/news/upload/perforce-logo.jpg" alt="Perforce">
+                <a href="#">Perforce Version Control</a>
+            </div>
+            <div class="option-card">
+                <img src="https://image.pngaaa.com/957/4209957-middle.png" alt="Bugstar Updates">
+                <a href="#">Bugstar Issue Tracker</a>
+            </div>
+            <div class="option-card">
+                <img src="https://logowik.com/content/uploads/images/rockstar-advanced-game-engine5591.logowik.com.webp" alt="RAGE Engine SDK">
+                <a href="">RAGE Engine SDK</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section">
+        <h2>Grand Theft Auto VI Devlopment™ Status</h2>
+        <a href="https://dev.rockstargames.com/americas" ><img src="https://www.gtavice.net/content/images/official-gta-vi-logo.png" width="10%">
+        </a>
+        <p>Latest updates on the development of Grand Theft Auto VI.</p>
+    </section>
+    
+    <section class="content-section">
+        <h2>Latest News & Updates</h2>
+        <div class="options">
+            <div class="option-card">
+               <a href="https://www.rockstargames.com/newswire/article/4kk8497a128421/celebrate-valentine-s-day-in-gta-online"> 
+                <img src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/4kk8497a128421/02ba0badd5e9d22313af9d33be60f9a90db8cb08.jpg" alt="Celebrate Valentine's Day in GTA Online">
+                </a> 
+                <p style="text-align: justify;"><small><strong>GTA Online</strong> <span class="date-text">- February 13, 2025</span></small></p>
+                <p>Celebrate Valentine's Day in GTA Online</p>
+            </div>
+    
+            <div class="option-card">
+                <a href="americas-content.html">
+                <img src="https://www.gtavice.net/content/images/gta6-logo-square.png" alt="New Grand Theft Auto VI Teaser">
+                </a>
+                <p style="text-align: justify;"><small><strong>Grand Theft Auto VI</strong> <span class="date-text">- March 5, 2025</span></small></p>
+                <p>Grand Theft Auto VI Teaser released - See what's coming next!</p>
+            </div>
+    
+            <div class="option-card">
+                <img src="https://media.licdn.com/dms/image/v2/D4E12AQHj6XLsPtDn_A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1707842079685?e=2147483647&v=beta&t=nhKEmv-GPnseLE3AzG_LRaltd1NGTGbiRH3Lj-aFWgg" alt="RAGE Engine Release">
+                <p style="text-align: justify;"><small><strong>RAGE Engine</strong> <span class="date-text">- April 20, 2025</span></small></p>
+                <p>RAGE Engine gets a major update - Learn about the latest improvements.</p>
+            </div>
+        </div>
+    </section>
+    
+
+ <!--<div class="option-card">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzUweXA3b2ZrMGF1ZWRneWQ3ZGEydDl5aG16eGNwc3JpdmI2d2xsbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nkqhw9j4v8KdPlcnoo/giphy.gif" alt="GTA VI Animated Teaser">
+            <p style="text-align: justify;"><small><strong>Grand Theft Auto VI</strong> <span class="date-text">- March 5, 2025</span></small></p>
+            <p>Grand Theft Auto VI Teaser released - See what's coming next!</p>        
+            </div>
+        </div>
+    </div>
+    <!--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>        
+
+    
+    <section class="content-section">
+        <h2>Career Opportunities</h2>
+        <p>Join our team and help shape the future of gaming.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Rockstar Games. All rights reserved.</p>
+    </footer>
+</body>
+</html>
